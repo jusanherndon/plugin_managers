@@ -34,13 +34,13 @@
 
 - name: downloading a theme for zsh
   git:
-    repo: https://github.com/guesswhozzz/guezwhoz-zshell
+    repo: https://github.com/guesswhozzz/021011.zsh-theme
     dest: "/home/{{ user }}/git/guezwhoz-scheme"
 
 - name: making a system link for theme
   file:
-    src: "/home/{{ user }}/git/guezwhoz-scheme/guezwhoz.zsh-theme"
-    dest: "/home/{{ user }}/git/oh-my-zsh/themes/guezwhoz.zsh-theme"
+    src: "/home/{{ user }}/git/guezwhoz-scheme/021011.zsh-theme"
+    dest: "/home/{{ user }}/git/oh-my-zsh/themes/021011.zsh-theme"
     state: link
 
 - name: downloading autocompletions
